@@ -8,9 +8,9 @@ Automatización de n8n que recibe el código de barras de un alimento envasado, 
 
 | Archivo | Qué es |
 |---|---|
-| `snackcheck-workflow.json` | Flujo exportado de n8n (sin credenciales) |
+| `snackcheck.json` | Flujo exportado de n8n (sin credenciales) |
 | `diagrama/snackcheck.excalidraw` | Diagrama de diseño (abrir en [excalidraw.com](https://excalidraw.com) → Open) |
-| `diagrama/snackcheck.png` / `.svg` | El mismo diagrama como imagen |
+| `diagrama/snackcheck.png` | El mismo diagrama como imagen |
 | `README.md` | Este documento |
 | `PRUEBAS.md` | Registro de pruebas (TC-001 … TC-014) |
 | `CHANGELOG.md` | Historial de versiones (SemVer) |
@@ -55,7 +55,7 @@ El fundador de SnackCheck quiere que su app, al escanear un producto, muestre en
 
 ## Configuración
 
-1. En n8n: **Workflows → Import from File** → `snackcheck-workflow.json`.
+1. En n8n: **Workflows → Import from File** → `snackcheck.json`.
 2. Abre el nodo **Groq - Modelo GPT-OSS 20B** y elige tu credencial de Groq (la del curso de integración de IA). Es la única credencial del proyecto; Open Food Facts no necesita clave.
 3. Guarda y pulsa **Test workflow** para probar con la URL de prueba (`/webhook-test/snackcheck`), o **activa** el flujo para usar la URL de producción (`/webhook/snackcheck`).
 
